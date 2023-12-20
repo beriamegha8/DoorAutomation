@@ -2,12 +2,17 @@ import cv2
 import numpy as np
 import telepot
 import time
-import serial  # Import the serial library
+import serial
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 # Telegram Bot Token and Chat ID (Replace with your bot token and chat ID)
-BOT_TOKEN = '6729207909:AAF99rowjcsw697wluLnK-QXdq5FGjS_7Ro'
-chat_id = '1923768228'
-CHAT_ID = '1923768228'
+BOT_TOKEN = os.environ.get('BOT_TOKEN')
+chat_id = os.environ.get('chat_id')
+CHAT_ID = os.environ.get('CHAT_ID')
 # Initialize the Telegram bot
 bot = telepot.Bot(BOT_TOKEN)    
 def handle(msg):
