@@ -29,7 +29,7 @@ The system captures video frames from a camera, performs face detection using Op
    CHAT_ID=your_chat_id
    
 4. Run the Python script:
-python face_recognition.py
+   python face_recognition.py
 
 ## Project Structure
 
