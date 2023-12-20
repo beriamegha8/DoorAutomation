@@ -24,10 +24,11 @@ The system captures video frames from a camera, performs face detection using Op
 2. Connect the Arduino to the system and update the serial port in the Python script.
 
 3. Create a .env file in the project root with the following content:
-BOT_TOKEN=your_telegram_bot_token
-CHAT_ID=your_chat_id
+   
+   BOT_TOKEN=your_telegram_bot_token
+   CHAT_ID=your_chat_id
 
-4. Run the Python script:
+5. Run the Python script:
 python face_recognition.py
 
 ## Project Structure
